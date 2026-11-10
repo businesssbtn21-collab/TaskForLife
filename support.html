@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaskForLife サポート</title>
+<style>
+  :root{
+    --bg:#faf9f8;
+    --surface:#ffffff;
+    --border:#e6e3e0;
+    --ink:#18150f;
+    --muted:#6e6a66;
+    --accent:#0a7cff;
+    --accent-soft:#e7f1ff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0a0a0a;
+      --surface:#141210;
+      --border:#2c2c2c;
+      --ink:#f4efec;
+      --muted:#ada29c;
+      --accent:#3d9bff;
+      --accent-soft:#0f1d2e;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0a0a0a;
+    --surface:#141210;
+    --border:#2c2c2c;
+    --ink:#f4efec;
+    --muted:#ada29c;
+    --accent:#3d9bff;
+    --accent-soft:#0f1d2e;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;
+    line-height:1.85;
+    padding:0 20px;
+    padding-block:56px;
+  }
+  .wrap{max-width:680px;margin:0 auto;}
+
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:36px;}
+  .mark{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:22px;color:var(--accent);line-height:1;}
+  .wordmark{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:16px;letter-spacing:.02em;}
+
+  h1{
+    font-family:"Zen Kaku Gothic New",sans-serif;
+    font-weight:900;
+    font-size:clamp(26px,5vw,34px);
+    line-height:1.35;
+    margin:0 0 6px;
+    text-wrap:balance;
+  }
+  .sub{color:var(--muted);font-size:15px;margin:0 0 40px;max-width:46ch;}
+
+  .contact{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+    background:var(--accent-soft);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:22px 24px;
+    margin-bottom:44px;
+  }
+  .contact .label{font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.03em;margin-bottom:4px;}
+  .contact .email{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:19px;}
+  .contact .email a{color:var(--ink);text-decoration:none;}
+  .contact .email a:hover{color:var(--accent);}
+  .btn{
+    display:inline-block;
+    background:var(--accent);
+    color:#ffffff;
+    font-weight:700;
+    font-size:14px;
+    padding:10px 18px;
+    border-radius:999px;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+
+  section{margin-bottom:34px;}
+  h2{
+    font-family:"Zen Kaku Gothic New",sans-serif;
+    font-weight:700;
+    font-size:18px;
+    margin:0 0 12px;
+  }
+  .qa{border-top:1px solid var(--border);}
+  .qa > div{padding:16px 0;border-bottom:1px solid var(--border);}
+  .q{font-weight:700;font-size:15px;margin:0 0 6px;display:flex;gap:8px;}
+  .q .idx{color:var(--accent);font-variant-numeric:tabular-nums;}
+  .a{font-size:14px;color:var(--ink);margin:0;padding-left:24px;}
+  .a, p{margin-top:0;}
+
+  .steps{list-style:none;padding:0;margin:0;counter-reset:step;}
+  .steps li{
+    counter-increment:step;
+    position:relative;
+    padding:0 0 0 34px;
+    margin-bottom:14px;
+    font-size:14px;
+  }
+  .steps li::before{
+    content:counter(step);
+    position:absolute;left:0;top:0;
+    width:24px;height:24px;
+    border-radius:50%;
+    background:var(--surface);
+    border:1px solid var(--border);
+    color:var(--accent);
+    font-weight:700;
+    font-size:12px;
+    display:flex;align-items:center;justify-content:center;
+  }
+
+  a{color:var(--accent);}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  footer{
+    margin-top:56px;
+    padding-top:24px;
+    border-top:1px solid var(--border);
+    color:var(--muted);
+    font-size:13px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;}
+
+  @media (max-width:480px){
+    .contact{flex-direction:column;align-items:flex-start;}
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><span class="mark">✓</span><span class="wordmark">TaskForLife</span></div>
+  <h1>サポート</h1>
+  <p class="sub">ホーム画面のウィジェットで、タスクと毎日のルーティーンを片づけるアプリです。困ったときは、ここから連絡してください。</p>
+  <div class="contact">
+    <div>
+      <div class="label">お問い合わせ / Contact</div>
+      <div class="email"><a href="mailto:businesssbtn21@gmail.com">businesssbtn21@gmail.com</a></div>
+    </div>
+    <a class="btn" href="mailto:businesssbtn21@gmail.com?subject=TaskForLife">メールを送る</a>
+  </div>
+  <section>
+    <h2>よくある質問</h2>
+    <div class="qa">
+      <div>
+        <p class="q"><span class="idx">Q.</span>タスクを消すには</p>
+        <p class="a">ウィジェットのタスクを押すと、そのタスクは終わりになります。アプリでは、左の丸を押すと終わり、左にスワイプすると消せます。</p>
+      </div>
+      <div>
+        <p class="q"><span class="idx">Q.</span>間違えて終えた・消したタスクを戻したい</p>
+        <p class="a">アプリの「タスク」画面の左上にある時計の印(履歴)を開き、戻したいタスクを押してください。終えた日・消した日から30日間は戻せます。「タスクの○×表」のウィジェットなら、今日のマスをもう一度押しても戻せます。</p>
+      </div>
+      <div>
+        <p class="q"><span class="idx">Q.</span>ルーティーンの×はいつつきますか</p>
+        <p class="a">○をつけないまま日付が変わると、その日のマスが×になります。やらない曜日を決めておくと、その日は「休」になって×はつきません。曜日はルーティーンの名前を押すと変えられます。</p>
+      </div>
+      <div>
+        <p class="q"><span class="idx">Q.</span>ロック画面にルーティーンを出したい</p>
+        <p class="a">ロック画面を長押しして「カスタマイズ」→「ロック画面」を選び、時計の下の枠から「TaskForLife」→「今日のルーティーン」を追加してください。</p>
+      </div>
+      <div>
+        <p class="q"><span class="idx">Q.</span>ウィジェットが新しくならない</p>
+        <p class="a">iPhoneの都合で、描き直しが少し遅れることがあります。アプリを一度開くと新しくなります。それでも変わらないときは、ウィジェットを置き直してください。</p>
+      </div>
+      <div>
+        <p class="q"><span class="idx">Q.</span>21時の通知を止めたい</p>
+        <p class="a">iPhoneの「設定」→「通知」→「TaskForLife」で通知をオフにできます。</p>
+      </div>
+      <div>
+        <p class="q"><span class="idx">Q.</span>iPhoneのカレンダーに書き込まれるのを止めたい</p>
+        <p class="a">アプリの「カレンダー」画面右上の歯車から、「iPhoneのカレンダーに書き込む」をオフにしてください。</p>
+      </div>
+      <div>
+        <p class="q"><span class="idx">Q.</span>入力した内容はどこかに送られますか</p>
+        <p class="a">いいえ。タスクやルーティーンはiPhoneの中だけに保存され、外には送りません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>English</h2>
+    <p>TaskForLife lets you finish tasks and keep daily routines right from your Home Screen widgets. For questions or problems, email <a href="mailto:businesssbtn21@gmail.com">businesssbtn21@gmail.com</a>. To restore a finished or deleted task, open History (the clock icon at the top left of the Tasks screen) and tap the task — items stay there for 30 days. Your tasks and routines are stored only on your iPhone.</p>
+  </section>
+  <footer>
+    <span>© 2026 TaskForLife</span>
+    <a href="privacy.html">プライバシーポリシー / Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>
